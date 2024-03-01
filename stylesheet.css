@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 8px;
+}
+
+.header {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-top {
+    grid-row: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-bottom {
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.notifs-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.buttons > button {
+    background-color: lightblue;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+main {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.project-card {
+    height: 200px;
+    outline: 1px solid black;
+}
+
+.side-cards {
+    display: grid;
+    grid-column: 2;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements-card, .trending-box {
+    outline: 1px solid red;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.trending-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.annoucement, .trending-profile {
+    width: 200px;
+    outline: 1px solid blue;
+}
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.sidebar {
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
