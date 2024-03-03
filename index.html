@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
@@ -17,13 +20,21 @@
                     </div>
                 </div>                
                 <div class="notifs-profile">
-                    <div><img src="svgs/bell-ring.svg" class="logo"></div>
+                    <div><img src="svgs/bell-outline.svg" class="logo"></div>
                     <div><img src="svgs/account-circle.svg" class="logo"></div>
-                    <div>Name</div>
+                    <div class="profile-name">John Doe</div>
                 </div>
             </div>
             <div class="header-bottom">
-                <p>Hello Name!</p>
+                <div class="greeting-and-profile-picture">
+                    <div class="profile-pic">
+                        <img src="svgs/account-circle.svg">
+                    </div>
+                    <div class="greeting">
+                        <p>Hello!</p>
+                        <p>Name!</p>
+                    </div>
+                </div>
                 <div class="buttons">
                     <button>Button 1</button>
                     <button>Button 2</button>
@@ -33,48 +44,69 @@
         </header>
         <aside class="sidebar">
             <div class="dashboard-logo-container">
-                <img src="svgs/view-dashboard.svg" class="dashboard-logo logo"> Dashboard
+                <img src="svgs/view-dashboard.svg" id="dashboard-logo">
+                <div class="page-name">Dashboard</div>
             </div>
             <ul class="main-options">
-                <li><img src="svgs/home-variant-outline.svg" class="home-logo logo"><a href="">Home</a></li>
-                <li><img src="svgs/account.svg" class="logo"><a href="">Profile</a></li>
-                <li><img src="svgs/message-reply.svg" class="logo"><a href="">Messages</a></li>
-                <li><img src="svgs/history.svg" class="logo"><a href="">History</a></li>
-                <li><img src="svgs/note-multiple.svg" class="logo"><a href="">Task</a></li>
-                <li><img src="svgs/account-group.svg" class="logo"><a href="">Communities</a></li>
+                <li><div class="option"><img src="svgs/home-variant-outline.svg" class="home-logo logo"><a href="">Home</a></div></li>
+                <li><div class="option"><img src="svgs/account.svg" class="logo"><a href="">Profile</a></div></li>
+                <li><div class="option"><img src="svgs/message-reply.svg" class="logo"><a href="">Messages</a></div></li>
+                <li><div class="option"><img src="svgs/history.svg" class="logo"><a href="">History</a></div></li>
+                <li><div class="option"><img src="svgs/note-multiple.svg" class="logo"><a href="">Task</a></div></li>
+                <li><div class="option"><img src="svgs/account-group.svg" class="logo"><a href="">Communities</a></div></li>
             </ul>
             <ul class="sub-options">
-                <li><img src="svgs/cog.svg" class="logo"><a href="">Settings</a></li>
-                <li><img src="svgs/help-box.svg" class="logo"><a href="">Support</a></li>
-                <li><img src="svgs/shield-check.svg" class="logo"><a href="">Privacy</a></li>
+                <li><div class="option"><img src="svgs/cog.svg" class="logo"><a href="">Settings</a></div></li>
+                <li><div class="option"><img src="svgs/help-box.svg" class="logo"><a href="">Support</a></div></li>
+                <li><div class="option"><img src="svgs/shield-check.svg" class="logo"><a href="">Privacy</a></div></li>
             </ul>
         </aside>
         <main>
             <h3 class="projects-header">Your Projects</h3>
             <div class="project-cards">
                 <div class="project-card">
-                    <h3>Some dummy header</h1>
-                    <p>Dummy text</p>
+                    <div class="project-text">
+                        <h3 class="project-card-header">Super cool project</h1>
+                        <p>A long description for a project which is made-up but is here to fill this card with some information.</p>
+                    </div>
+                    <div class="project-card-buttons">
+                        <img src="svgs/star-plus-outline.svg">
+                        <img src="svgs/eye-plus-outline.svg">
+                        <img src="svgs/source-fork.svg">
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Some dummy header</h1>
-                    <p>Dummy text</p>
+                    <div class="project-text">
+                        <h3 class="project-card-header">Some dummy header</h1>
+                        <p>Dummy text</p>
+                    </div>
+                    <div class="project-card-buttons">
+                        <img src="svgs/star-plus-outline.svg">
+                        <img src="svgs/eye-plus-outline.svg">
+                        <img src="svgs/source-fork.svg">
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Some dummy header</h1>
-                    <p>Dummy text</p>
+                    <div class="project-text">
+                        <h3 class="project-card-header">Some dummy header</h1>
+                        <p>Dummy text</p>
+                    </div>
+                    <div class="project-card-buttons">
+                        <img src="svgs/star-plus-outline.svg">
+                        <img src="svgs/eye-plus-outline.svg">
+                        <img src="svgs/source-fork.svg">
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Some dummy header</h1>
-                    <p>Dummy text</p>
-                </div>
-                <div class="project-card">
-                    <h3>Some dummy header</h1>
-                    <p>Dummy text</p>
-                </div>
-                <div class="project-card">
-                    <h3>Some dummy header</h1>
-                    <p>Dummy text</p>
+                    <div class="project-text">
+                        <h3 class="project-card-header">Some dummy header</h1>
+                        <p>Dummy text</p>
+                    </div>
+                    <div class="project-card-buttons">
+                        <img src="svgs/star-plus-outline.svg">
+                        <img src="svgs/eye-plus-outline.svg">
+                        <img src="svgs/source-fork.svg">
+                    </div>
                 </div>
             </div>
             <h3 class="annoucements-header">Announcements</h3>
