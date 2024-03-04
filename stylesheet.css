@@ -62,13 +62,6 @@ body {
     border: none;
 }
 
-.header-bottom {
-    grid-row: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .notifs-profile {
     display: flex;
     justify-content: center;
@@ -76,9 +69,40 @@ body {
     gap: 32px;
 }
 
+.profile-name {
+    font-size: 16px;
+}
+
+.header-bottom {
+    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 128px;
+}
+
 .greeting-and-profile-picture {
     display: flex;
+    align-items: center;
     margin-left: 5px;
+    gap: 12px;
+}
+
+.profile-pic {
+    height: 50px;
+}
+
+.greeting-and-username {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 4px;
+}
+
+.greeting {
+    font-family: Arial;
+    font-weight: normal;
 }
 
 .buttons {
@@ -87,9 +111,13 @@ body {
 }
 
 .buttons > button {
-    background-color: lightblue;
-    padding: 8px;
+    background-color: #84cc16;
+    color: #FFFFFF;
+    border: none;
+    width: fit-content;
+    padding: 12px 24px 12px 24px;
     border-radius: 16px;
+    font-weight: bold;
 }
 
 main {
@@ -109,6 +137,15 @@ main {
 .projects-header, .annoucements-header {
     justify-self: start;
     align-self: end;
+    font-size: 16px;
+}
+
+.projects-header {
+    margin-left: 16px;
+}
+
+.annoucements-header {
+    justify-self: center;
 }
 
 .project-cards {
@@ -131,6 +168,9 @@ main {
     height: 200px;
     width: 350px;
     padding: 16px;
+}
+
+.project-card, .trending-box, .announcements-box {
     border-radius: 16px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
@@ -178,13 +218,13 @@ main {
 }
 
 .announcements-box, .trending-box {
-    height: 300px;
-    width: 400px;
-    outline: 1px solid black;
+    height: 270px;
+    width: 300px;
     background-color: white;
     border-radius: 16px;
     place-content: center;
     justify-self: center;
+    padding: 16px;
 }
 
 .trending-box {
@@ -198,18 +238,41 @@ main {
     border-bottom: 1px solid grey;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 8px;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .announcement {
-    height: 100px;
-    width: 400px;
+    height: 90px;
+    width: 300px;
+}
+
+.announcement-text {
+    font-size: 12px;
+    color: grey;
+    font-weight: normal;
 }
 
 .trending-profile {
-    height: 75px;
-    width: 400px;
+    height: 67.5px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.trending-profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending-profile-bio {
+    font-size: 12px;
+    font-weight: normal;
+    color: grey;
 }
 
 .announcement:last-child, .trending-profile:last-child {
@@ -229,7 +292,7 @@ main {
     flex-direction: column;
     gap: 16px;
     list-style-type: none;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .dashboard-logo-container {
